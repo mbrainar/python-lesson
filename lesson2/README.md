@@ -155,22 +155,30 @@ There are 5 standard data types:
 
 ### Nested Data Types
 
-Now we can get real crazy with our data. Remember when I said that mixing data 
-types was going to be important later. Well here it is. Because we can mix data 
-types, we can now nest lists inside of dictionaries, or dictionaries inside of 
-lists. Here is an example of the former:
+Remember when I said that mixing data types was going to be important later. 
+Well here it is. Because we can mix data types, we can now nest lists inside of 
+dictionaries, or dictionaries inside of lists. Here is an example of the former 
+(a list within a dictionary):
 
 ```
 me = {
-      'name':'Matthew',
-      'height':6.0,
-      'weight':195.0,
-      'eye_color':'hazel',
-      'lucky_things' = ['underwear', 'rabbits foot', 11]
-      }
+    'name':'Matthew',
+    'height':6.0,
+    'weight':195.0,
+    'eye_color':'hazel',
+    'lucky_things' = ['underwear', 'rabbits foot', 11]
+    }
 ```
 
+Here is an example of the latter (a list of dictionaries):
 
+```
+us = [
+    {'name':'Matthew','eye_color':'hazel'},
+    {'name':'Drew','eye_color':'brown'},
+    {'name':'Craig','eye_color':'unknown'}
+]
+```
 
 [<< Beginning](/README.md) | [< Lesson 1](/lesson1/README.md) | 
 [Lesson 3 >](/lesson3/README.md)
