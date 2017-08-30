@@ -1,8 +1,8 @@
 # Lesson 3
 
-## Data Types
+## Conditions
 
-## Variables
+## Loops
 
 
 
