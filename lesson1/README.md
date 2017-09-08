@@ -55,6 +55,9 @@ mbrainar:~/workspace $ python -V
 Python 2.7.6
 ```
 
+Most content in this lesson is written for 2.7, and due to syntax changes, 
+will not work properly in Python3.
+
 ### Python interpreter
 
 There are multiple ways to interact with Python. The first is the interpreter. 
@@ -115,6 +118,49 @@ the script, we get a new result:
 mbrainar:~/workspace $ python lesson1/hello-world.py 
 Hello Matthew
 ```
+
+## Python Syntax
+
+### Indentation
+
+Python was designed to be easily human readable. One of the ways in which this 
+is accomplished is through the use of indentation. When writing Python code 
+there are sections where some code is meant to be executed as a block; Python 
+relies on indentation instead of explicit delimiters, for example `{ }`. 
+Python doesn't care what your indentation is 
+[tabs or spaces](https://www.youtube.com/watch?v=SsoOG6ZeyUI) but it has to be 
+consistent throughout the code. If your indentation doesn't match, you will see 
+an error that looks like 
+`IndentationError: unindent does not match any outer indentation level`
+Here is a sample code block using indentation:
+
+```
+if name == "Matthew":
+    print "Hello", name
+```
+
+### Reserved Words
+
+Python has reserved words; words that cannot be used as variable, object, 
+or function names.
+
+![python-reserved-words.png](/lesson1/python-reserved-words.png)
+
+### Import Modules
+
+Python allows you to import pieces of python code, either from another file 
+that you created, or packages that someone else has written. A python module 
+is simply a .py file containing python code. To import a python module that 
+you wrote (this is commonly done in order to simplify .py files so they don't 
+get too long), simply use `import my_module`--where the my_module.py file is 
+located in the same directory as your code.
+
+Alternatively, you can import python packages written by someone else. This is 
+done similarly within your code, i.e. `import datetime`. In this case datetime 
+is a built-in python module, so there are no missing dependencies. In many cases 
+importing a python module will require that you install that module using pip, 
+for example `pip install piglatin`. It is recommended to do this in a virtual 
+environment--which is outside the scope of this lesson.
 
 
 [<< Beginning](/README.md) | [Lesson 2 >](/lesson2/README.md)

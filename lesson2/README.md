@@ -44,9 +44,13 @@ Data types determine whether an object can do something, or whether it just
 would not make sense. For example, you can add 1 + 2; but you cannot add 1 + 
 the letter "a". 
 
-There are 5 standard data types:
+There are 6 standard data types:
 
-1. Numbers
+1. Boolean
+
+    Boolean data has 2 options, it can only be True or False.
+
+2. Numbers
 
     Numbers can be one of two types:
     
@@ -75,7 +79,7 @@ There are 5 standard data types:
     Integers can be converted to float by using the `float()` function; and 
     vice versa with the `int()` function.
 
-2. Strings
+3. Strings
 
     Strings are text-based alphanumerics. To create a string variable, simply 
     put the value in quotes. Python will accept single quotes or double quotes; 
@@ -115,7 +119,7 @@ There are 5 standard data types:
     `print name,"drives a",car`
     
     
-3. List
+4. List
 
     A list is a sequence of items. To create a list, we use a comma 
     separated list enclosed within square brackets, for example: 
@@ -132,7 +136,7 @@ There are 5 standard data types:
     item is in location 0. If we wanted to get the 2nd item in our list above 
     we would `print lucky_things[1]`.
     
-4. Tuple
+5. Tuple
 
     A tuple is like a list, with the following differences:
         
@@ -142,7 +146,7 @@ There are 5 standard data types:
         `the_d_list = ('Kathy Griffin')`
     
     
-5. Dictionary
+6. Dictionary
 
     A dictionary is a key:value mapping. To create a dictionary, we create 
     a "key" to identify the location, and a "value" that we want to store, and 
