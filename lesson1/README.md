@@ -162,5 +162,21 @@ importing a python module will require that you install that module using pip,
 for example `pip install piglatin`. It is recommended to do this in a virtual 
 environment--which is outside the scope of this lesson.
 
+Lets try it out. Lets print a sentence in piglatin. Enter the following into 
+the terminal. 
+
+```
+pip install piglatin
+python
+```
+
+Now in the python interpreter, copy and paste:
+
+```
+from piglatin import translate
+print translate("This is a sentence written in piglatin")
+```
+
+
 
 [<< Beginning](/README.md) | [Lesson 2 >](/lesson2/README.md)
