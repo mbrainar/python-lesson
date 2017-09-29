@@ -111,8 +111,8 @@ a specific person, yourself. We can edit the hello-world.py file. In Cloud9,
 simply double click on the hello-world.py file in the directory structure on 
 the left side of the screen. 
 <!--![lesson1-directory.png](/lesson1/lesson1-directory.png)-->
-We can change the print statement to read `print "Hello Matthew"`. When we rerun 
-the script, we get a new result:
+We can change the print statement to read `print "Hello Matthew"`, or use your 
+own name. When we rerun the script, we get a new result:
 
 ```
 mbrainar:~/workspace $ python lesson1/hello-world.py 
@@ -127,11 +127,6 @@ Python was designed to be easily human readable. One of the ways in which this
 is accomplished is through the use of indentation. When writing Python code 
 there are sections where some code is meant to be executed as a block; Python 
 relies on indentation instead of explicit delimiters, for example `{ }`. 
-Python doesn't care what your indentation is 
-[tabs or spaces](https://www.youtube.com/watch?v=SsoOG6ZeyUI) but it has to be 
-consistent throughout the code. If your indentation doesn't match, you will see 
-an error that looks like 
-`IndentationError: unindent does not match any outer indentation level`
 Here is a sample code block using indentation:
 
 ```
@@ -139,12 +134,46 @@ if name == "Matthew":
     print "Hello", name
 ```
 
+Python doesn't care what your indentation is 
+[tabs or spaces](https://www.youtube.com/watch?v=SsoOG6ZeyUI) but it has to be 
+consistent throughout the code. If your indentation doesn't match within a file 
+you will see an error: 
+`IndentationError: unindent does not match any outer indentation level`
+
+
+As the Russian proverb states, **"trust, but verify."** So throughout this 
+lesson, we will be verifying. Try running the "indentation.py" file by running 
+`python indentation.py` in the terminal.
+
+```
+mbrainar:~/workspace/lesson1 (master) $ python indentation.py 
+  File "indentation.py", line 4
+    print "Hello",name
+        ^
+IndentationError: expected an indented block
+```
+
+
 ### Reserved Words
 
 Python has reserved words; words that cannot be used as variable, object, 
 or function names.
 
 ![python-reserved-words.png](/lesson1/python-reserved-words.png)
+
+**trust, but verify** Enter python interpreter by typing `python` into the 
+terminal. In the interpreter, enter `if = "string"`. We should receive a 
+syntax error.
+
+```
+>>> if = "string"
+  File "<stdin>", line 1
+    if = "string"
+       ^
+SyntaxError: invalid syntax
+>>> 
+```
+
 
 ### Import Modules
 
@@ -163,7 +192,7 @@ for example `pip install piglatin`. It is recommended to do this in a virtual
 environment--which is outside the scope of this lesson.
 
 Lets try it out. Lets print a sentence in piglatin. Enter the following into 
-the terminal. 
+the terminal to install the package and then enter the interpreter.
 
 ```
 pip install piglatin
