@@ -48,7 +48,7 @@ There are 6 standard data types:
 
 1. Boolean
 
-    Boolean data has 2 options, it can only be True or False.
+    Boolean data has 2 options, it can only be `True` or `False`.
 
 2. Numbers
 
@@ -156,6 +156,24 @@ There are 6 standard data types:
     To access a value in a dictionary, we specify the key that we are looking 
     for in square brackets. If we wanted to get my eye color, we would 
     `print me['eye_color']`
+
+**trust, but verify**
+
+First, let's verify these data types. Run open the "data-types.py" file and add 
+some values that you think are appropriate and save. Then run they file with
+`python lesson2/data-types.py` and see if you are right. Your output should look 
+like:
+
+```
+mbrainar:~/workspace (master) $ python lesson2/data-types.py 
+<type 'bool'>
+<type 'int'>
+<type 'float'>
+<type 'str'>
+<type 'list'>
+<type 'dict'>
+```
+
 
 ### Nested Data Types
 
